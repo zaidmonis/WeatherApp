@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<Weather> call, Response<Weather> response) {
                 //Toast.makeText(MainActivity.this, response.toString(), Toast.LENGTH_SHORT).show();
                 Weather weather = response.body();
-                textView.setText(String.valueOf(weather.getMain().getTemp()));
+                textView.setText(String.valueOf(weather.getMain().getFeels_like()));
                 //progressDoalog.dismiss();
                 //generateDataList(response.body());
             }
